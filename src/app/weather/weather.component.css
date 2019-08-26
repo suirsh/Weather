@@ -1,0 +1,99 @@
+
+.textb {
+    background:rgba(0, 0,0, 0.3);
+    border-radius: 10px;
+  padding-left: 10px;
+  margin:  20px;
+  width :50%;
+  height:50px;
+  font-size:24px;
+  position: absolute;
+  left :2px;
+  top :50px;
+  /*box-shadow: 10px 10px 5px grey;*/
+  color: black;
+  
+  
+  padding: 10px;
+  
+  }
+  .buttonb {
+  text-align: center;
+  margin-left: 0px;
+  height: 30px;
+  width: 100px;
+  left: 20px;
+  
+  
+  position: absolute;
+  top :140px;
+  
+  }
+  
+  .buttonb2 {
+  text-align: center;
+  margin-left: 0px;
+  height: 30px;
+  width: 100px;
+  
+  
+  position: absolute;
+  left:20px;
+  bottom :270px;
+  
+  }
+  
+  .tableb {
+    
+  width: 100;
+   position: static;
+    border: 0;
+    table-layout: fixed;
+    margin: 20px;
+    border-style: solid;
+    border-color: rgb(16, 16, 17);
+  width : 600px;
+  height: 50px;
+  text-align: center;
+  position: absolute;
+  left :2px;
+  top :200px;
+  /*box-shadow: 0 5px #666;*/
+  background-color:rgba(0, 0,0, 0.3);
+  
+  
+  }
+  .ps {
+    position: static;
+    margin: 20px;
+    left :2px;
+    top :300px;
+    position: absolute;
+    background: white;
+    color: black;
+    font-size: 20px;
+  }
+  .tableb1 {
+    border: 0;
+    margin: 20px;
+    border-style: solid;
+    border-color: black;
+    left :2px;
+    top :400px;
+    text-align: center;
+    position: absolute;
+   /* box-shadow: 0 5px #666;*/
+    background-color: rgba(0, 0,0, 0.3);
+    
+    height :50px;
+  }
+  
+  
+  
+  
+  
+  
+  .textb:not(:valid) ~ .close-icon {
+      display: none;
+  }
+  

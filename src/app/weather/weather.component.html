@@ -1,0 +1,53 @@
+
+
+
+
+
+            
+
+
+<input type="text" name="" value=""  placeholder="Please enter the city's name" class = "textb" #cityName>
+
+
+<button type= "button" name="button" class= "buttonb"(click)="this.getWeather(cityName.value, status)">Search</button>
+
+<div class="currentCity">
+  <table border="1" class="tableb" >
+      
+      <th>CITYNAME</th>
+      
+      <th >REPORT OF DAY 1</th>
+      <th>REPORT OF DAY 2</th>
+      <th>REPORT OF DAY 3</th>
+      <th>REPORT OF DAY 4</th>
+    <tr *ngIf="this.currentCityWeather !== undefined">
+      <td >{{this.currentCityWeather.cityName}} </td>
+      <td *ngFor="let v of this.currentCityWeather.values.split(',')" > {{v}} </td>
+      </tr>
+  
+        </table>
+        </div>
+
+<div class= "pastSearches">
+  <p class="ps"> Past Search </p>
+  <table border="1" class="tableb1" >
+      <th>CITYNAME</th>
+      <th>TIME
+      </th>
+      <th>REPORT OF DAY 1</th>
+      <th>REPORT OF DAY 2</th>
+      <th>REPORT OF DAY 3</th>
+      <th>REPORT OF DAY 4</th>
+<tr *ngFor="let pastWeather of this.pastSearchValue">
+      <td>{{pastWeather.cityName}} </td>
+     
+    <!--<td>{{pastWeather.searchTime[0]}}{{pastWeather.searchTime[1]}}{{pastWeather.searchTime[2]}}{{pastWeather.searchTime[3]}}{{pastWeather.searchTime[4]}}</td>-->
+    <td *ngIf = "pastWeather.searchTime !== null">{{pastWeather.searchTime}}</td>
+      <td *ngFor="let v of this.pastWeather.values.split(',')" > {{v}} </td>
+      </tr>
+        </table>
+        </div>
+
+<!--<button type= "button" name="button2" class= "buttonb2"(click)="this.clear(cityName.value)">Clear</button>
+-->
+
